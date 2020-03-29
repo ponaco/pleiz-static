@@ -1,7 +1,8 @@
 // <button class="turn-on-lights"><span aria-hidden="true">☀</span> Encender las luces</button>
 
 // The toggle mode button should only makes sense
-// if JS is enabled
+// if JS is enabled. We can append it to the DOM
+// with JS since it shouldn't be visible otherwise.
 function renderColorSchemeBtn() {
   const button = document.createElement("button")
   button.classList.add("lights")

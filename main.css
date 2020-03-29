@@ -10,6 +10,7 @@
   }
 }
 
+/* reset styles from UA default style sheets */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -31,6 +32,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+/* fonts */
 @font-face {
   font-family: 'Inter';
   font-style:  normal;
@@ -84,6 +86,7 @@ time, mark, audio, video {
   src: url("./fonts/Swell-Braille.ttf") format("truetype");
 }
 
+/* a11y utility */
 .sr-only {
   position: absolute;
   height: 1px;
@@ -104,6 +107,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* mobile-first approach of defining styles */
 main {
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) minmax(auto, 300px) minmax(2rem, 1fr);
@@ -116,6 +120,7 @@ main {
   margin-bottom: 9rem;
 }
 
+/* high width viewports definitions with media queries */
 @media (min-width: 768px) {
   main {
     grid-template-columns: repeat(12, 1fr);

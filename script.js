@@ -23,11 +23,9 @@ function placeButton(button, isDesktop) {
   if(isDesktop) {
     const sidebar = document.querySelector(".sidebar")
     sidebar.prepend(button)
-    console.log("Button should be added to sidebar")
   } else {
     const hero = document.querySelector(".hero")
     hero.appendChild(button)
-    console.log("Button should be added to hero")
   }
 }
 

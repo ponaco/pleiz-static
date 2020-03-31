@@ -166,7 +166,7 @@ body > footer {
   margin-bottom: 3rem;
 }
 
-.hero img {
+#hero-img {
   width: 100%;
   max-height: 672px;
   object-fit: cover;
@@ -269,6 +269,16 @@ button.lights:active,
 .sidebar a:hover,
 .sidebar a:active {
   text-decoration: underline;
+}
+
+.no-underline {
+  display: inline-block;
+  padding-right: 0.5ch;
+}
+
+.no-underline:hover,
+.no-underline:active {
+  text-decoration: none;
 }
 
 #new-spaces {

@@ -128,13 +128,22 @@ main {
   grid-template-areas:
     ". hero ."
     ". content ."
-    ". sidebar ."
-    ". footer .";
+    ". sidebar .";
   margin-top: 4rem;
   margin-bottom: 9rem;
 }
 
 /* high width viewports definitions with media queries */
+@media(min-width: 420px) {
+  main {
+    grid-template-columns: 4rem 1fr 4rem;
+    grid-template-areas:
+      ". hero ."
+      ". content ."
+      ". sidebar .";
+    }
+}
+
 @media (min-width: 768px) {
   main {
     grid-template-columns: repeat(12, 1fr);
@@ -152,6 +161,14 @@ body > footer {
   grid-template-areas:
     ". footer .";
   margin-bottom: 4.75rem;
+}
+
+@media(min-width: 420px) {
+    body > footer {
+      grid-template-columns: 4rem 1fr 4rem;
+      grid-template-areas:
+        ". footer .";
+    }
 }
 
 @media(min-width: 768px) {

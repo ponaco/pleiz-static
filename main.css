@@ -1,13 +1,27 @@
 
-:root {
+/* CSS custom properties applied to body rather than :root
+due to a bg-color rendering bug on Chrome when dynamically
+changing it. */
+body {
+  --colorMode: "light";
   --bgColor: white;
   --color: #111111;
 }
+
 @media (prefers-color-scheme: dark) {
-  :root {
+  body {
+    --colorMode: "dark";
+  }
+
+  body:not([data-color-scheme]) {
     --bgColor: black;
     --color: #F1F1F1;
   }
+}
+
+body[data-color-scheme="dark"] {
+  --bgColor: black;
+  --color: #F1F1F1;
 }
 
 /* reset styles from UA default style sheets */

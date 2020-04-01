@@ -140,6 +140,11 @@ h2 {
   line-height: 40px;
 }
 
+.photo-quote {
+  text-decoration: none;
+  color: unset;
+}
+
 /* mobile-first approach of defining styles */
 main {
   display: grid;
@@ -281,7 +286,7 @@ button.lights {
   text-align: start;
   font-size: 1.25rem;
   letter-spacing: -0.03em;
-  border-top: 2px solid #333333;
+  /* border-top: 2px solid #333333; */
   padding-top: 0.25rem;
   padding: 0;
   cursor: pointer;
@@ -295,7 +300,6 @@ button.lights {
 .sidebar a {
   text-decoration: none;
   color: var(--color);
-  border-top: 2px solid #333333;
   padding-top: 0.25rem;
   margin-bottom: 3rem;
 }

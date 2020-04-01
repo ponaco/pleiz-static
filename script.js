@@ -51,8 +51,10 @@ function renderColorSchemeBtn() {
 
 function placeButton(button, isDesktop) {
   if(isDesktop) {
+    const sidebarTitle = document.getElementById("sidebar-title-link")
+    console.log(sidebarTitle.nextSibling)
     const sidebar = document.querySelector(".sidebar")
-    sidebar.prepend(button)
+    sidebar.insertBefore(button, sidebarTitle.nextSibling)
   } else {
     const hero = document.querySelector(".hero")
     hero.appendChild(button)

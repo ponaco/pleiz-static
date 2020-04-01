@@ -114,11 +114,17 @@ time, mark, audio, video {
 
 body {
   font-size: 1.25rem;
-  color: var(--color);
-  background-color: var(--bgColor);
   letter-spacing: -0.03em;
   line-height: 1.5;
   font-family: "Inter", sans-serif;
+  color: var(--color);
+  background-color: var(--bgColor);
+}
+
+.main-container {
+  color: var(--color);
+  background-color: var(--bgColor);
+  transition: background-color ease 0.3s, color ease 0.3s;
 }
 
 h1 {
@@ -141,13 +147,22 @@ main {
   grid-template-areas:
     ". hero ."
     ". content ."
-    ". sidebar ."
-    ". footer .";
-  margin-top: 4rem;
+    ". sidebar .";
+  padding-top: 4rem;
   margin-bottom: 9rem;
 }
 
 /* high width viewports definitions with media queries */
+@media(min-width: 420px) {
+  main {
+    grid-template-columns: 4rem 1fr 4rem;
+    grid-template-areas:
+      ". hero ."
+      ". content ."
+      ". sidebar .";
+    }
+}
+
 @media (min-width: 768px) {
   main {
     grid-template-columns: repeat(12, 1fr);
@@ -159,7 +174,7 @@ main {
   }
 }
 
-body > footer {
+.main-container > footer {
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) minmax(auto, 300px) minmax(2rem, 1fr);
   grid-template-areas:
@@ -167,8 +182,16 @@ body > footer {
   margin-bottom: 4.75rem;
 }
 
+@media(min-width: 420px) {
+  .main-container > footer {
+      grid-template-columns: 4rem 1fr 4rem;
+      grid-template-areas:
+        ". footer .";
+    }
+}
+
 @media(min-width: 768px) {
-  body > footer {
+  .main-container > footer {
     grid-template-columns: repeat(12, 1fr);
   grid-template-areas: ". footer footer footer footer footer footer footer footer footer footer .";
   }
@@ -179,7 +202,7 @@ body > footer {
   margin-bottom: 3rem;
 }
 
-.hero img {
+#hero-img {
   width: 100%;
   max-height: 672px;
   object-fit: cover;
@@ -282,6 +305,16 @@ button.lights:active,
 .sidebar a:hover,
 .sidebar a:active {
   text-decoration: underline;
+}
+
+.no-underline {
+  display: inline-block;
+  padding-right: 0.5ch;
+}
+
+.no-underline:hover,
+.no-underline:active {
+  text-decoration: none;
 }
 
 #new-spaces {

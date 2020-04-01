@@ -114,11 +114,17 @@ time, mark, audio, video {
 
 body {
   font-size: 1.25rem;
-  color: var(--color);
-  background-color: var(--bgColor);
   letter-spacing: -0.03em;
   line-height: 1.5;
   font-family: "Inter", sans-serif;
+  color: var(--color);
+  background-color: var(--bgColor);
+}
+
+.main-container {
+  color: var(--color);
+  background-color: var(--bgColor);
+  transition: background-color ease 0.3s, color ease 0.3s;
 }
 
 /* mobile-first approach of defining styles */
@@ -129,7 +135,7 @@ main {
     ". hero ."
     ". content ."
     ". sidebar .";
-  margin-top: 4rem;
+  padding-top: 4rem;
   margin-bottom: 9rem;
 }
 
@@ -155,7 +161,7 @@ main {
   }
 }
 
-body > footer {
+.main-container > footer {
   display: grid;
   grid-template-columns: minmax(2rem, 1fr) minmax(auto, 300px) minmax(2rem, 1fr);
   grid-template-areas:
@@ -164,7 +170,7 @@ body > footer {
 }
 
 @media(min-width: 420px) {
-    body > footer {
+  .main-container > footer {
       grid-template-columns: 4rem 1fr 4rem;
       grid-template-areas:
         ". footer .";
@@ -172,7 +178,7 @@ body > footer {
 }
 
 @media(min-width: 768px) {
-  body > footer {
+  .main-container > footer {
     grid-template-columns: repeat(12, 1fr);
   grid-template-areas: ". footer footer footer footer footer footer footer footer footer footer .";
   }

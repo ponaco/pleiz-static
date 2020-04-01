@@ -8,6 +8,8 @@ body {
   --color: #111111;
 }
 
+/*
+
 @media (prefers-color-scheme: dark) {
   body {
     --colorMode: "dark";
@@ -23,6 +25,8 @@ body[data-color-scheme="dark"] {
   --bgColor: black;
   --color: #F1F1F1;
 }
+
+*/
 
 /* reset styles from UA default style sheets */
 html, body, div, span, applet, object, iframe,
@@ -129,9 +133,10 @@ body {
 
 h1 {
   font-weight: bold;
-  font-size: 60px;
-  line-height: 80px;
+  font-size: 50px;
+  line-height: 60px;
   letter-spacing: -0.05em;
+  padding-top: 0.25rem;
 }
 
 h2 {
@@ -307,7 +312,7 @@ button.lights {
 button.lights:hover,
 button.lights:active,
 .sidebar a:hover,
-.sidebar a:active {
+.sidebar a:active, .photo-quote:hover {
   text-decoration: underline;
 }
 
@@ -333,5 +338,10 @@ button.lights:active,
 
   .sidebar a {
     margin-bottom: 4.375rem;
+  }
+
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
   }
 }

@@ -1,96 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" title="main" href="./main.css" />
-    <link rel="preload" as="font" href="./fonts/Inter-Regular.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="./fonts/Inter-Bold.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="./fonts/Swell-Braille.ttf" type="font/ttf" crossorigin="anonymous">
-    <link rel="preload" as="script" href="./script.js" crossorigin="anonymous">
-    <!-- Open Graph -->
-    <meta property="og:type"         content="website">
-    <meta property="og:locale"       content="es_ES">
-    <meta property="og:title"        content="Pleiz">
-    <meta property="og:description"  content="Manifiesto. Manifest. Manifeste. マニフェスト。">
-    <meta property="og:image"        content="img/card.png">
-    <!-- Twitter -->
-    <meta name="twitter:card"        content="summary_large_image">
-    <meta name="twitter:creator"     content="@pleizco">
-    <meta name="twitter:title"       content="Pleiz">
-    <meta name="twitter:description" content="Manifiesto. Manifest. Manifeste. マニフェスト。">
-    <meta name="twitter:image"       content="img/card.png">
-    <!-- Favicons -->
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/16.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicons/96.png">
-    <!-- Description -->
-    <meta name="description" content="Manifiesto de Pleiz. Una web para todas las personas.">
-    <title>Pleiz</title>
-  </head>
-  <body>
-    <div class="main-container">
-      <main style="margin-bottom: 4.6875rem; margin-top: 0px;">
-        <div class="hero">
-          <h1 class="pleiz-border" style="margin-bottom: 4.6875rem;">Una Web para todas las personas</h1>
-          <figure>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="stylesheet" href="css/estilos.css">
+        <link rel="preload" as="font" href="./fonts/Inter-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="./fonts/Inter-Bold.woff2" type="font/woff2" crossorigin="anonymous">
+        <link rel="preload" as="font" href="./fonts/Swell-Braille.ttf" type="font/ttf" crossorigin="anonymous">
+        <title>Pleiz</title>
+    </head>
+    <main>
+        <body>
+            <!-- Titulo principal -->
+            <h1>Una Web para todas las personas</h1>
+             <!-- Titulo secundario -->
+             <h2>Índice</h2>
+             <div>
+                <ul class="sinEstilo">
+                    <li>
+                        <a href="#mirada"><span aria-hidden="true" class="noSubrayado">→ </span>Nueva mirada</a>
+                    </li>
+                    <li>
+                        <a href="#espacios"><span aria-hidden="true" class="noSubrayado">→ </span>Nuevos espacios</a>
+                    </li>
+                    <li>
+                        <a href="#enlaces"><span aria-hidden="true" class="noSubrayado">→ </span>Enlaces</a>
+                    </li>
+                    <li>
+                        <a href="#luces"><button id="theme-switcher" aria-pressed="false"><span aria-hidden="true" class="noSubrayado">○&#xFE0E; </span>Apagar o encender las luces</button></a>
+                    </li>
+                </ul>
+             </div>
+             
+            <!-- Titulo secundario -->
+            <h2 id="mirada">Nueva mirada</h2>
+            <div>
+            <p>"La Web es la humanidad conectada por la tecnología." — Sir Tim Berners-Lee</p>
+            <p>Este es un sitio web. Y está compuesto por palabras, las que estás leyendo o escuchando ahora mismo. Podrás hacerlo desde otro lugar, otro dispositivo, otro idioma, en otro momento: a tu manera. Pero las estás recibiendo porque tienen un espacio en la Web.</p>
+            <p>Tener un espacio en la Web significa tener una voz. Tener una voz significa visibilidad, oportunidades, presencia, existir. Nos preguntamos lo que implica ser una persona digital. Lo que implica tener una voz y un espacio. Lo que implica no tenerlos.</p>
+            <p>Queremos dar un espacio igualitario a todas las personas, en especial a las que todavía no tuvieron oportunidad de expresar sus palabras. De existir digitalmente. De tener sus espacios.</p>
+            </div>
+            <!-- Imagen -->
+            <div>
             <img 
               src="img/museu-medium.jpg"
               srcset="img/museu-large.jpg 2400w,
                       img/museu-medium.jpg 1920w,
                       img/museu-small.jpg 640w"
-              sizes="(max-width: 768px) 640px,
-                      (max-width: 2304px) 1920px,
-                      2400px"
               alt="Persona sentada observando el museo"
-              style="margin-bottom: 0.9375rem;"
-              id="hero-img"
             />
-            <figcaption><a href="https://unsplash.com/@guilhermestecanella" rel="noopener noreferrer" class="photo-quote"><span aria-hidden="true">↗</span> Fotografía por Guilherme Stecanella en el Museu Oscar Niemeyer, Curitiba, Brasil</a></figcaption>
-          </figure>
-        </div>
-        <article class="content">
-          <h2 style="margin-bottom: 3.125rem;">Nueva mirada</h2>
-          <blockquote>
-            <p>
-              "La Web es la humanidad conectada por la tecnología."
-            </p>
-            <footer>— Sir Tim Berners-Lee</footer>
-          </blockquote>
-          <p>Este es un sitio web. Y está compuesto por palabras, las que estás leyendo o escuchando ahora mismo. Podrás hacerlo desde otro lugar, otro dispositivo, otro idioma, en otro momento: a tu manera. Pero las estás recibiendo porque tienen un espacio en la Web.</p>
-          <p>Tener un espacio en la Web significa tener una voz. Tener una voz significa visibilidad, oportunidades, presencia, existir. Nos preguntamos lo que implica ser una persona digital. Lo que implica tener una voz y un espacio. Lo que implica no tenerlos.</p>
-          <p style="margin-bottom: 4.6875rem;">Queremos dar un espacio igualitario a todas las personas, en especial a las que todavía no tuvieron oportunidad de expresar sus palabras. De existir digitalmente. De tener sus espacios.</p>
-          
-          <h2 id="new-spaces" style="margin-top: 0px;margin-bottom: 3.125rem;">Nuevos espacios</h2>
-          <ul>
-            <li>Seguros</li>
-            <li>Accesibles</li>
-            <li>Inclusivos</li>
-            <li>Diversos</li>
-            <li>Autónomos</li>
-            <li>Personalizables</li>
-            <li>Libres</li>
-            <li>De y para todas las personas</li>
-          </ul>
-          <p>Esa es nuestra visión como Pleiz: una mirada humana a nuestros espacios digitales. Una mirada humana para los espacios que ya están en la Web, para los que se están creando, y para los que se vendrán.</p>
-          <p>Es momento de replantearnos y de construir, paso a paso, la humanidad conectada por la tecnología: porque la Web es para todas las personas.</p>
-          <p style="margin-bottom: 0px;">Comencemos.</p>
-        </article>
-        <aside class="sidebar">
-          <h2 class="sidebar-title pleiz-border" style="margin-bottom: 3.125rem;">Enlaces</h2>
-          <a href="https://github.com/pleiz" rel="noopener noreferrer"><span aria-hidden="true" class="no-underline">↗&#xFE0E;</span>Organización en Github</a>
-          <a href="https://twitter.com/pleizco" rel="noopener noreferrer"><span aria-hidden="true" class="no-underline">↗&#xFE0E;</span>Perfil en Twitter</a>
-          <a href="https://instagram.com/pleizco" rel="noopener noreferrer"><span aria-hidden="true" class="no-underline">↗&#xFE0E;</span>Perfil en Instagram</a>
-        </aside>
-      </main>
-      <footer style="margin-bottom: 4.6875rem;">
-        <div class="wrapper pleiz-border">
-          <p><span aria-hidden="true">∅</span> <span class="logo">Pleiz</span></p>
-          <p aria-hidden="true" class="braille">Pleiz</p>
-        </div>
-      </footer>
-    </div>
-    <!-- <script type="module" src="script.js"></script> -->
-  </body>
+            <figcaption><a href="https://unsplash.com/@guilhermestecanella" rel="noopener noreferrer" class="photo-quote"><span aria-hidden="true" class="noSubrayado">↗&#xFE0E;</span> Fotografía por Guilherme Stecanella en el Museu Oscar Niemeyer, Curitiba, Brasil</a></figcaption>
+            </div>
+            <!-- Titulo secundario -->
+            <h2 id="espacios">Nuevos espacios</h2>
+            <div>
+                <ul>
+                    <li>
+                        <p>Seguros</p>
+                    </li>
+                    <li>
+                        <p>Accesibles</p>
+                    </li>
+                    <li>
+                        <p>Inclusivos</p>
+                    </li>
+                    <li>
+                        <p>Diversos</p>
+                    </li>
+                    <li>
+                        <p>Autónomos</p>
+                    </li>
+                    <li>
+                        <p>Personalizables</p>
+                    </li>
+                    <li>
+                        <p>Libres</p>
+                    </li>
+                    <li>
+                        <p>De y para todas las personas</p>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <p>Esa es nuestra visión como <b>Pleiz</b>: una mirada humana a nuestros espacios digitales. Una mirada humana para los espacios que ya están en la Web, para los que se están creando, y para los que se vendrán.</p>
+                <p>Es momento de replantearnos y de construir, paso a paso, la humanidad conectada por la tecnología: porque la Web es para todas las personas.</p>
+                <p>Comencemos.</p>
+            </div>
+            <!-- Enlaces -->
+            <h2 id="enlaces">Enlaces</h2>
+            <div>
+                <ul class="sinEstilo">
+                    <li>
+                        <a href="#"><span aria-hidden="true" class="noSubrayado">↗︎&#xFE0E; </span>Organización en Github</a>
+                    </li>
+                    <li>
+                        <a href="#"><span aria-hidden="true" class="noSubrayado">↗︎&#xFE0E; </span>Perfil en Twitter</a>
+                    </li>
+                    <li>
+                        <a href="#"><span aria-hidden="true" class="noSubrayado">↗︎&#xFE0E; </span>Perfil en Instagram</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <footer>
+                    <p>∅ Pleiz <span aria-hidden="true" class="braille">Pleiz</span> — Este sitio permanece abierto las 24 horas del día.</p>
+                </footer>
+            </div>
+            <script src="js/luces.js"></script>
+            <script>
+                const theme = new Themur({
+                  toggleElement: document.getElementById('theme-switcher'),
+                  themeClass: 'dark-theme',
+                  useLocalStorage: true
+                });
+              </script>
+        </body>
+    </main>
 </html>

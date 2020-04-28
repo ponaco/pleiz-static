@@ -1,0 +1,191 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    font-size: 100%;
+}
+
+/* Colores al apagar/encender las luces */
+:root {
+  --color-bg: #fff;
+  --color-texto: #111;
+}
+
+.dark-theme {
+  --color-bg: #000;
+  --color-texto: #f1f1f1;
+}
+
+/* Fuentes */
+@font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("./fonts/Inter-Regular.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Inter-Italic.woff2") format("woff2"), url("./fonts/Inter-Italic.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("./fonts/Inter-Bold.woff") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../fonts/Inter-ExtraBold.woff2?v=3.11") format("woff2"), url("./fonts/Inter-ExtraBold.woff?v=3.11") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/Inter-SemiBold.woff2?v=3.11") format("woff2"), url("./fonts/Inter-SemiBold.woff?v=3.11") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Swell';
+    font-style:  normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Swell-Braille.ttf") format("truetype");
+  }
+
+/* Cuerpo */
+body {
+    display: grid;
+    margin: auto;
+    max-width: 38rem;
+    padding: 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    background-color: var(--color-bg);
+    color: var(--color-texto);
+    transition: background-color ease 0.3s, color ease 0.3s;
+}
+
+div {
+    margin-bottom: 3.125rem;
+}
+
+img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    filter: grayscale(100%);
+    border-radius: 5px;
+}
+
+/* Título h1 */
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+    letter-spacing: -0.03em;
+    margin-bottom: 3.125rem;
+}
+
+/* Título h2 */
+h2 {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: -0.03em;
+}
+
+/* Listas sin orden */
+ul {
+    padding-left: 1rem;
+}
+
+ul.sinEstilo {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Elementos de listas */
+li {
+    margin-bottom: 1rem;
+}
+
+/* Enlaces/links */
+a {
+    text-decoration: underline;
+    color: var(--color-texto);
+    margin-bottom: 1rem;
+  }
+
+a:hover {
+    color: var(--color-bg);
+    background-color: var(--color-texto);
+}
+
+/* Botones */
+button {
+    background-color: transparent;
+    border: transparent;
+    text-decoration: underline;
+    color: var(--color-texto);
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    padding-left: 0;
+}
+
+button:hover {
+    color: var(--color-bg);
+}
+
+.noSubrayado,
+.noSubrayado:hover,
+.noSubrayado:active {
+    display: inline-block;
+    padding-right: 0.5ch;
+    text-decoration: none;
+}
+
+.braille {
+    font-family: "Swell";
+}
+
+/* Respuesta para dispositivos con pantallas mayores a 768 píxeles */
+@media(min-width: 900px) {
+    body {
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 60px;
+        line-height: 80px;
+    }
+
+    h2 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    button {
+        font-size: 1rem;
+    }
+  }

@@ -16,7 +16,6 @@
             <h1>Uma Web para todas as pessoas</h1>
              <!-- Titulo secundario -->
              <h2 id="indice">Índice</h2>
-             <div>
                 <ul class="sinEstilo">
                     <li>
                         <a href="../index.html"><span aria-hidden="true" class="noSubrayado">←&#xFE0E; </span>Vá para a página inicial</a>
@@ -34,33 +33,30 @@
                         <a href="#links"><span aria-hidden="true" class="noSubrayado">↓&#xFE0E; </span>Links</a>
                     </li>
                     <li>
-                        <a href="#luzes"><button id="theme-switcher" aria-pressed="false"><span aria-hidden="true" class="noSubrayado">○&#xFE0E; </span>Apagar ou acender as luzes</button></a>
+                        <a href="#luzes"><button id="theme-switcher" aria-pressed="false"><span aria-hidden="true" class="noSubrayado">☀&#xFE0E; </span>Apagar ou acender as luzes</button></a>
                     </li>
                 </ul>
-             </div>
              
             <!-- Titulo secundario -->
             <h2 id="olhar">Um novo olhar</h2>
-            <div>
-            <p>"A Web é a humanidade conectada pela tecnologia." — Sir Tim Berners-Lee</p>
+            <p>"A Web é a humanidade conectada pela tecnologia." — Sir Tim Berners-Lee.</p>
             <p>Este é um site. Ele é composto de palavras, as que você está lendo ou ouvindo agora mesmo. Você poderá fazer isso desde outro lugar, outro dispositivo, outro idioma, em um outro momento: do seu jeito. Mas você as está recebendo porque elas têm um espaço na Web.</p>
             <p>Ter um espaço na Web significa ter uma voz. Ter uma voz significa visibilidade, oportunidades, presença, existir. Nós nos perguntamos o que implica ser uma pessoa digital. O que implica ter uma voz e um espaço. O que implica não tê-los.</p>
             <p>Nós queremos dar um espaço igualitário a todas as pessoas, especialmente para aquelas que ainda não tiveram a oportunidade de expressar suas palavras. De existir digitalmente. De ter seus espaços.</p>
-            </div>
             <!-- Imagen -->
-            <div>
-            <img 
-              src="../img/museu-medium.jpg"
-              srcset="../img/museu-large.jpg 2400w,
-                      ../img/museu-medium.jpg 1920w,
-                      ../img/museu-small.jpg 640w"
-              alt="Pessoa sentada em um museu"
+            <div class="bg">
+            <img
+              class="mix" 
+              src="../img/biblio-medium.jpg"
+              srcset="../img/biblio-large.jpg 2400w,
+                      ../img/biblio-medium.jpg 1920w,
+                      ../img/biblio-small.jpg 640w"
+              alt="Vários andares dentro de uma biblioteca, com pessoas descendo as escadas, conversando e lendo livros."
             />
-            <figcaption><a href="https://unsplash.com/@guilhermestecanella" rel="noopener noreferrer" class="photo-quote"><span aria-hidden="true" class="noSubrayado">↗&#xFE0E;</span> Fotografia por Guilherme Stecanella no Museu Oscar Niemeyer, Curitiba, Brasil</a></figcaption>
             </div>
+            <figcaption><a href="https://unsplash.com/@hermannmayer" rel="noopener noreferrer" class="photo-quote"><span aria-hidden="true" class="noSubrayado">↗&#xFE0E;</span>Fotografia por Hermann Mayer no Stadtbibliothek, Stuttgart, Alemanha</a></figcaption>
             <!-- Titulo secundario -->
             <h2 id="espaços">Novos espaços</h2>
-            <div>
                 <ul>
                     <li>
                         <p>Seguros</p>
@@ -87,14 +83,10 @@
                         <p>Das pessoas e para todas as pessoas.</p>
                     </li>
                 </ul>
-            </div>
-            <div>
                 <p>Essa é nossa visão como <b>Pleiz</b>: um olhar humano para os nossos espaços digitais. Um olhar humano para os espaços que já estão na Web, para aqueles que estão sendo criados e para aqueles que virão.</p>
                 <p>É hora de repensar e de construir, passo a passo, a humanidade conectada pela tecnologia: porque a Web é para todas as pessoas.</p>
                 <p>Vamos começar.</p>
-            </div>
             <!-- Autores -->
-            <div>  
                 <h2 id="creditos">Créditos</h2>
                 <ul>
                     <li>
@@ -107,10 +99,8 @@
                         <p>Tradução para o Português por: <b>Amado Franco</b></p>
                     </li>
                 </ul>
-            </div>
             <!-- Enlaces -->
             <h2 id="links">Links</h2>
-            <div>
                 <ul class="sinEstilo">
                     <li>
                         <a href="https://github.com/pleiz"><span aria-hidden="true" class="noSubrayado">↗︎&#xFE0E; </span>Organização no Github</a>
@@ -122,12 +112,9 @@
                         <a href="https://instagram.com/pleizco"><span aria-hidden="true" class="noSubrayado">↗︎&#xFE0E; </span>Perfil do Instagram</a>
                     </li>
                 </ul>
-            </div>
-            <div>
                 <footer>
                     <p>∅ Pleiz <span aria-hidden="true" class="braille">Pleiz</span> — Este site permanece aberto 24 horas por dia.</p>
                 </footer>
-            </div>
             <script src="../js/luces.js"></script>
             <script>
                 const theme = new Themur({

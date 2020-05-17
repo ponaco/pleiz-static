@@ -100,7 +100,7 @@
   
   img {
       width: 100%;
-      object-fit: contain;
+      object-fit: fill;
       margin-bottom: 1rem;
       border-radius: 5px;
   }

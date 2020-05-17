@@ -96,6 +96,7 @@
   
   div.bg:hover {
       background-color: white;
+      max-width: fit-content;
     }
   
   img {

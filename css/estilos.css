@@ -1,210 +1,202 @@
 /* Colores al apagar/encender las luces */
 :root {
-    --color-bg: #f1f1f1;
-    --color-texto: #090909;
-  }
-  
-  .dark-theme {
-    --color-bg: #090909;
-    --color-texto: #f1f1f1;
-  }
-  
-  /* Fuentes */
-  @font-face {
-      font-family: 'Inter';
-      font-style:  normal;
-      font-weight: 400;
-      font-display: swap;
-      src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("./fonts/Inter-Regular.woff") format("woff");
-    }
-    
-    @font-face {
-      font-family: 'Inter';
-      font-style:  italic;
-      font-weight: 400;
-      font-display: swap;
-      src: url("../fonts/Inter-Italic.woff2") format("woff2"), url("./fonts/Inter-Italic.woff") format("woff");
-    }
-    
-    @font-face {
-      font-family: 'Inter';
-      font-style:  normal;
-      font-weight: 700;
-      font-display: swap;
-      src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("./fonts/Inter-Bold.woff") format("woff");
-    }
-    
-    @font-face {
-      font-family: 'Inter';
-      font-style:  normal;
-      font-weight: 800;
-      font-display: swap;
-      src: url("../fonts/Inter-ExtraBold.woff2?v=3.11") format("woff2"), url("./fonts/Inter-ExtraBold.woff?v=3.11") format("woff");
-    }
-    
-    @font-face {
-      font-family: 'Inter';
-      font-style:  normal;
-      font-weight: 600;
-      font-display: swap;
-      src: url("../fonts/Inter-SemiBold.woff2?v=3.11") format("woff2"), url("./fonts/Inter-SemiBold.woff?v=3.11") format("woff");
-    }
-    
-  @font-face {
-    font-family: 'Swell';
+  --color-bg: #f1f1f1;
+  --color-texto: #090909;
+}
+
+.dark-theme {
+  --color-bg: #090909;
+  --color-texto: #f1f1f1;
+}
+
+/* Fuentes */
+@font-face {
+    font-family: 'Inter';
     font-style:  normal;
     font-weight: 400;
     font-display: swap;
-    src: url("../fonts/Swell-Braille.ttf") format("truetype");
+    src: url("../fonts/Inter-Regular.woff2") format("woff2"), url("./fonts/Inter-Regular.woff") format("woff");
   }
   
-  body main > * {
-    max-width: 38rem;
-    margin-bottom: 2rem;
+  @font-face {
+    font-family: 'Inter';
+    font-style:  italic;
+    font-weight: 400;
+    font-display: swap;
+    src: url("../fonts/Inter-Italic.woff2") format("woff2"), url("./fonts/Inter-Italic.woff") format("woff");
   }
   
-  /* Cuerpo */
-  body {
-    display: grid;
-    margin: auto;
-    max-width: 38rem;
-    padding: 2rem;
-    font-family: 'Inter', sans-serif;
-    font-size: 14px;
-    line-height: 24px;
-    -moz-osx-font-smoothing: grayscale;
-    background-color: var(--color-bg);
-    color: var(--color-texto);
-    transition: background-color ease 0.3s, color ease 0.3s;
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url("../fonts/Inter-Bold.woff2") format("woff2"), url("./fonts/Inter-Bold.woff") format("woff");
   }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url("../fonts/Inter-ExtraBold.woff2?v=3.11") format("woff2"), url("./fonts/Inter-ExtraBold.woff?v=3.11") format("woff");
+  }
+  
+  @font-face {
+    font-family: 'Inter';
+    font-style:  normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url("../fonts/Inter-SemiBold.woff2?v=3.11") format("woff2"), url("./fonts/Inter-SemiBold.woff?v=3.11") format("woff");
+  }
+  
+@font-face {
+  font-family: 'Swell';
+  font-style:  normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/Swell-Braille.ttf") format("truetype");
+}
+
+body main > * {
+  max-width: 38rem;
+  margin-bottom: 2rem;
+}
+
+/* Cuerpo */
+body {
+  display: grid;
+  margin: auto;
+  max-width: 38rem;
+  padding: 2rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--color-bg);
+  color: var(--color-texto);
+  transition: background-color ease 0.3s, color ease 0.3s;
+}
 
 ::selection {
-  background-color: #666;
+background-color: #666;
 }
-  
-  footer {
-    margin-top: 5rem;
-    font-weight: normal;
-  }
-  
-  div.colour {
-      display: inline-flex;
-      border-radius: 5px;
-      background-color: #f1f1f1;
-      max-width: fit-content;
-  }
-  
-  div.bg:hover {
-      background-color: white;
-      max-width: fit-content;
-    }
-  
-  img {
-      width: 100%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-      border-radius: 5px;
-  }
-  
-  img.mix {
-    mix-blend-mode: multiply;
-    transition: filter ease 0.5s;
-    filter: grayscale(100%);
-    margin: 0;
+
+footer {
+  margin-top: 5rem;
+  font-weight: normal;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+img.mix {
+  mix-blend-mode: multiply;
+  transition: filter ease 0.5s;
+  filter: grayscale(100%);
+  margin: 0;
+  padding: 0;
+}
+
+img.mix:hover {
+  filter: grayscale(0%);
+}
+
+figcaption {
+  margin-top: 1rem;
+}
+
+/* Título h1 */
+h1 {
+  font-size: 40px;
+  line-height: 50px;
+  letter-spacing: -0.05em;
+  margin-bottom: -1rem;
+}
+
+/* Título h2 */
+h2 {
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: -0.03em;
+  margin-bottom: -1rem;
+}
+
+/* Listas sin orden */
+ul {
+    padding-left: 1rem;
+}
+
+ul.sinEstilo {
+    list-style-type: none;
     padding: 0;
-  }
-  
-  img.mix:hover {
-    filter: grayscale(0%);
-  }
-  
-  /* Título h1 */
-  h1 {
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: -0.05em;
-    margin-bottom: -1rem;
-  }
-  
-  /* Título h2 */
-  h2 {
-    font-size: 20px;
-    line-height: 30px;
-    letter-spacing: -0.03em;
-    margin-bottom: -1rem;
-  }
-  
-  /* Listas sin orden */
-  ul {
-      padding-left: 1rem;
-  }
-  
-  ul.sinEstilo {
-      list-style-type: none;
-      padding: 0;
-  }
-  
-  /* Elementos de listas */
-  li {
-      margin-bottom: 1rem;
-  }
-  
-  /* Enlaces/links */
-  a {
-      text-decoration: underline;
-      color: var(--color-texto);
-      margin-bottom: 1rem;
-    }
-  
-  a:hover {
-      color: var(--color-bg);
-      background-color: var(--color-texto);
-  }
-  
-  /* Botones */
-  button {
-      background-color: transparent;
-      border: transparent;
-      text-decoration: underline;
-      color: var(--color-texto);
-      margin-bottom: 1rem;
-      font-size: 0.875rem;
-      padding-left: 0;
-  }
-  
-  button:hover {
-      color: var(--color-bg);
-  }
-  
-  .noSubrayado,
-  .noSubrayado:hover,
-  .noSubrayado:active {
-      display: inline-block;
-      padding-right: 0.5ch;
-      text-decoration: none;
-  }
-  
-  .braille {
-      font-family: "Swell";
 }
-  
-  /* Respuesta para dispositivos con pantallas mayores a 768 píxeles */
-@media(min-width: 900px) {
-    body {
-        font-size: 16px;
-    }
 
-    h1 {
-        font-size: 60px;
-        line-height: 80px;
-    }
+/* Elementos de listas */
+li {
+    margin-bottom: 1rem;
+}
 
-    h2 {
-        font-size: 30px;
-        line-height: 40px;
-    }
-    
-    button {
-        font-size: 1rem;
-    }
+/* Enlaces/links */
+a {
+    text-decoration: underline;
+    color: var(--color-texto);
+    margin-bottom: 1rem;
   }
+
+a:hover {
+    color: var(--color-bg);
+    background-color: var(--color-texto);
+}
+
+/* Botones */
+button {
+    background-color: transparent;
+    border: transparent;
+    text-decoration: underline;
+    color: var(--color-texto);
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    padding-left: 0;
+}
+
+button:hover {
+    color: var(--color-bg);
+}
+
+.noSubrayado,
+.noSubrayado:hover,
+.noSubrayado:active {
+    display: inline-block;
+    padding-right: 0.5ch;
+    text-decoration: none;
+}
+
+.braille {
+    font-family: "Swell";
+}
+
+/* Respuesta para dispositivos con pantallas mayores a 768 píxeles */
+@media(min-width: 900px) {
+  body {
+      font-size: 16px;
+  }
+
+  h1 {
+      font-size: 60px;
+      line-height: 80px;
+  }
+
+  h2 {
+      font-size: 30px;
+      line-height: 40px;
+  }
+  
+  button {
+      font-size: 1rem;
+  }
+}

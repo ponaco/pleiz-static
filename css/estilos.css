@@ -87,6 +87,13 @@ footer {
   font-weight: normal;
 }
 
+div.colour {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  max-width: fit-content;
+  display: inline-flex;
+}
+
 img {
     width: 100%;
     object-fit: cover;
